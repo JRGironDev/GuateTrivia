@@ -47,6 +47,22 @@
             @endif
         </div>
 
+        <div>
+            <x-input-label for="aboutMe" :value="__('Sobre mi')" />
+            <textarea id="aboutMe" name="aboutMe" class="text-black border-green-300 dark:border-green-700 dark:bg-gray-900 dark:text-gray-300 focus:border-green-500 dark:focus:border-green-600 focus:ring-green-500 dark:focus:ring-green-600 rounded-md shadow-sm w-full" autofocus autocomplete="aboutMe"><?php echo $user->aboutMe; ?></textarea>
+        </div>
+
+        <div>
+            <x-input-label for="birthday" :value="__('Fecha de nacimiento')" />
+            <x-text-input id="birthday" name="birthday" type="date" class="mt-1 block w-full" :value="old('birthday', $user->birthday)" required autofocus autocomplete="birthday" />
+            <x-input-error class="mt-2" :messages="$errors->get('name')" />
+        </div>
+
+        <div>
+            <x-input-label for="country" :value="__('Pais')" />
+
+        </div>
+
         <div class="flex items-center gap-4">
             <x-primary-button>{{ __('Guardar') }}</x-primary-button>
 
@@ -57,7 +73,7 @@
                     x-transition
                     x-init="setTimeout(() => show = false, 2000)"
                     class="text-sm text-gray-600 dark:text-gray-400"
-                >{{ __('Guardar.') }}</p>
+                >{{ __('Información actualizada') }}</p>
             @endif
         </div>
     </form>
