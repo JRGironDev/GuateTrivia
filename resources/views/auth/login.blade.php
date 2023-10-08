@@ -2,12 +2,18 @@
     <!-- Session Status -->
     <x-auth-session-status class="mb-4" :status="session('status')" />
 
+    <div class="mt-5 mb-20">
+        <a href="/">
+            <x-application-logo class="w-30 h-30 fill-current" />
+        </a>
+    </div>
+
     <form method="POST" action="{{ route('login') }}" novalidate>
         @csrf
 
         <!-- Email Address -->
         <div>
-            <x-input-label for="email" :value="__('Email')" />
+            <x-input-label for="email" :value="__('Correo')" />
             <x-text-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus autocomplete="username" />
             <x-input-error :messages="$errors->get('email')" class="mt-2" />
         </div>
@@ -25,10 +31,10 @@
         </div>
 
         <!-- Remember Me -->
-        <div class="block mt-4">
+        <div class="block mt-6">
             <label for="remember_me" class="inline-flex items-center">
-                <input id="remember_me" type="checkbox" class="rounded dark:bg-gray-900 border-gray-300 dark:border-gray-700 text-indigo-600 shadow-sm focus:ring-indigo-500 dark:focus:ring-indigo-600 dark:focus:ring-offset-gray-800" name="remember">
-                <span class="ml-2 text-sm text-gray-600 dark:text-gray-400">{{ __('Recordarme') }}</span>
+                <input id="remember_me" type="checkbox" class="rounded dark:bg-gray-900 border-gray-300 dark:border-gray-700 text-green-600 shadow-sm focus:ring-green-500 dark:focus:ring-igreenndigo-600 dark:focus:ring-offset-gray-800" name="remember">
+                <span class="ml-2 text-sm text-white dark:text-green-400">{{ __('Recordarme') }}</span>
             </label>
         </div>
 
