@@ -53,7 +53,7 @@ body, html {
   .comic-header .icons {
     position: absolute;
     bottom: 10px;
-    right: 10px;
+    right: 60px;
   }
 
   .comic-style {
@@ -104,8 +104,7 @@ body, html {
     text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
   }
 
-  #play-button a:hover{
-   
+  #play-button a:hover{   
     color: #86efac;
   }
 
@@ -113,7 +112,27 @@ body, html {
     color: #4CAF50;
     text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
   }
+  .add-friends {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px; 
+    color: #4CAF50;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6); 
+}
+
+.add-friends a:hover {
+    color: #86efac;
+}
 
   .comic-header .icons a:hover {
-    color: #86efac;; /* Color al pasar el ratón sobre los iconos */
+    color: #86efac;
   }
+
+  .rotate-text {
+    display: inline-block;
+    transform: rotate(180deg);
+    height: 5px;
+}
+
+
