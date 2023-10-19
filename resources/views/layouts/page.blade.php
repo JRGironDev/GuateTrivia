@@ -19,7 +19,7 @@
     <div class="content">
       <h2>{{ Auth::user()->name }}</h2>
       <div class="progress">
-        <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="rotate-text">Nivel7</span></div>
+        <div class="progress-bar w-75" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><span class="rotate-text">Nivel 7</span></div>
       </div>
       <h2>955 Pts.</h2>
     </div>
