@@ -1,0 +1,138 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+
+  .comic-header {
+    background-size: cover;
+    background-repeat: no-repeat; 
+    border: 0.3px solid #4CAF50; 
+    border-radius: 0;
+    height: calc(33.33% - 5px);
+    width: 100%; 
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    position: relative;
+    display: flex;
+    align-items: center;
+    
+  }
+
+  .comic-header h2 {
+    color: #86efac;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+  }
+
+  .comic-header img {
+    border-radius: 50%;
+    max-height: 80%;
+    margin-right: 50px; 
+    margin-left: 50px;
+  }
+
+  .comic-header .content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .comic-header h2 {
+    font-size: 1em;
+  }
+
+  .comic-header .progress-bar {
+    height: 20px; 
+    font-size: 0.8em; 
+    transform: rotate(180deg); 
+  }
+  .progress-bar {
+    background-color: green; /* Cambia este color según tu preferencia */
+  }
+
+  .comic-header .icons {
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+  }
+
+  .comic-style {
+    background-color: #ffff; 
+    border: 1px solid #4CAF50; 
+    border-radius: 0;
+    height: 100%; 
+    width: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    margin: 3px;
+    padding: 7px;
+  }
+
+  .img-circle {
+    border-radius: 50%;
+    max-width: 100%; 
+    height: auto;
+    border: 0.3px solid #4CAF50;
+    
+  }
+
+    .avatar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%; 
+  }
+
+  .avatar {
+    width: 250px; 
+    height: 39rem;
+    
+  }
+  
+  /* Estilo para el contenedor */
+  .container-full-height {
+    height: calc(100% - calc(33.33% + 5px)); /* El 100% menos la altura del encabezado */
+  }
+
+  #play-button{
+    padding: 192px;
+    color: #4CAF50;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+  }
+
+  #play-button a:hover{   
+    color: #86efac;
+  }
+
+  .comic-header .icons a{
+    color: #4CAF50;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+  }
+  .add-friends {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    font-size: 24px; 
+    color: #4CAF50;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6); 
+}
+
+.add-friends a:hover {
+    color: #86efac;
+}
+
+  .comic-header .icons a:hover {
+    color: #86efac;
+  }
+
+  .rotate-text {
+    display: inline-block;
+    transform: rotate(180deg);
+    height: 5px;
+}
+
+
