@@ -12,10 +12,9 @@
   
 </head>
 <body>
- <!-- Page Heading -->   
-
+ <!-- Page Heading -->  
   <div class="comic-header" style="background: url('images/bus.png');">
-    <img src="images/jmarroquin.jpg" alt="Imagen circular" class="img-circle">
+    <img src="{{asset('images/jmarroquin.jpg')}}" alt="Imagen circular" class="img-circle">
     <div class="content">
       <h2>{{ Auth::user()->name }}</h2>
       <div class="progress">
@@ -24,14 +23,13 @@
       <h2>955 Pts.</h2>
     </div>
     <div class="icons">
-      <a href="/" class="mr-2"><i class="fas fa-medal fa-3x"></i></a>
+      <a data-toggle="modal" data-target="#ventanaModal" class="mr-2"><i class="fas fa-medal fa-3x"></i></a>
       <a href="{{ __('profile') }}"><i class="fas fa-gear fa-3x"></i></a>
     </div>
   </div>
-
   <!-- Page Heading --> 
 
- <!-- Page Content -->
+  <!-- Page Content -->
  <main>
   @yield('content')
  </main> 
