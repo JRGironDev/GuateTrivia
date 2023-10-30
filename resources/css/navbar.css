@@ -1,0 +1,134 @@
+.titulo-tabla {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.titulo-tabla h1 {
+    font-size: 30px;
+    font-weight: bold;
+    color: black;
+    margin: 0;
+}
+
+/* body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.search-box {
+    display: flex;
+    margin-top: 10px;
+    width: 100%;
+}
+
+#searchInput {
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+#searchButton {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.content {
+    width: 100%;
+} */
+
+/*nueva barra de navegacion*/
+
+        /* Estilo para la barra de navegación */
+        .navbar {
+            background-color: #333;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+
+        .navbar .searchInput {
+            color: black;
+        }
+        /* Estilo para los botones de enlace */
+        .nav-links {
+            display: inline;
+        }
+
+        /* Estilo para la lista desplegable */
+        .dropdown {
+            display: inline;
+            position: relative;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #333;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        /* Estilo para el botón de búsqueda y el campo de entrada */
+        .search-container {
+            display: inline;
+        }
+
+        /* Estilos generales para los botones y enlaces */
+        .btn {
+            background-color: #555;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+
+        /* Estilo para los elementos de la lista desplegable */
+        .dropdown-content a {
+            color: white;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #444;
+        }
