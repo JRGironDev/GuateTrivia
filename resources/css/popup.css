@@ -1,0 +1,105 @@
+#mostrarPopup {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: 10px;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+.popup-contenido {
+    background: #fff;
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 10px;
+    position: relative;
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-texto {
+    font-weight: bold;
+    display: flex;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flecha {
+    width: 75px;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flecha img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+#image-container {
+    width: 250px;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup-contenido .image {
+    margin: 30px;
+    width: auto;
+    max-height: 300px;
+    height: 200px;
+    transition: transform 0.2s;
+}
+
+.botones {
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.botones img {
+    margin: 10px;
+    padding: 5px;
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+}
+
+.popup-contenido img:hover {
+    transform: scale(1.2);
+}
+
+#mostrarPopup:hover {
+    background-color: #88edae;
+  }
