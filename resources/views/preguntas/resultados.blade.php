@@ -13,7 +13,7 @@
                     <div class="card">
                         <div class="card-header" style="text-align: center">RESULTADO</div>
                         <div class="card-body">
-                            <h1 style="text-align: center">Su puntuacion fue de: {{$puntuacion}}</h1>
+                            <h1 style="text-align: center">Su puntuacion fue de: {{$nota}}</h1>
                         </div>
                     </div>
 
