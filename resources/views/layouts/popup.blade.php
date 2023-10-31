@@ -24,7 +24,7 @@
     <h2>955 Pts.</h2>
   </div>
   <div class="icons">
-    <a href="/" class="mr-2"><i class="fas fa-medal fa-3x"></i></a>
+    <a data-toggle="modal" data-target="#ventanaModal" class="mr-2"><i class="fas fa-medal fa-3x"></i></a>
     <a href="{{ __('profile') }}"><i class="fas fa-gear fa-3x"></i></a>
   </div>
 </div>
