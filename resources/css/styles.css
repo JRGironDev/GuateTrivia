@@ -132,7 +132,10 @@ body, html {
   .rotate-text {
     display: inline-block;
     transform: rotate(180deg);
-    height: 5px;
+    height: 5px;    
 }
 
-
+#avatares {
+  display: flex;
+  height: 150px;
+}
