@@ -5,7 +5,7 @@ use App\Http\Controllers\AvatarController;
 use App\Http\Controllers\AmistadController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\preguntasController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -67,6 +67,10 @@ Route::get('/buscar-amigos', [AmistadController::class, 'buscaramigos'])->name('
 
 
 Route::get('/search-amigos', 'AmistadController@buscarAmigo')->name('buscar_amigos');
+
+/*Rutas para preguntas*/
+Route::get('/preguntas', [preguntasController::class, 'index']);
+Route::get('/resultado', [preguntasController::class, 'resultado'])->name('preguntas.resultado');
 
 
 require __DIR__.'/auth.php';
