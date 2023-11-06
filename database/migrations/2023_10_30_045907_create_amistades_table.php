@@ -12,7 +12,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('amistades', function (Blueprint $table) {
-            $table->id();
+            $table->ID();
             $table->bigInteger('Persona1')->unsigned();
             $table->bigInteger('Persona2')->unsigned();
             $table->datetime('FechaConfirmacion')->nullable();
@@ -23,8 +23,8 @@ return new class extends Migration
             $table->index('Persona2');
             
             $table->foreign('EstadoSolicitud')->references('codigo')->on('estadosamistad');
-            $table->foreign('Persona1')->references('id')->on('users');
-            $table->foreign('Persona2')->references('id')->on('users');
+            $table->foreign('Persona1')->references('ID')->on('users');
+            $table->foreign('Persona2')->references('ID')->on('users');
         });
     }
     

@@ -1,5 +1,7 @@
 @extends('layouts.page')
 
+@section('title', 'Dashboard')
+
 @section('content')
 
  <!-- Ventana modal Insignias -->
@@ -44,7 +46,8 @@
                 <a href="/preguntas" class="mr-2"><i class="fa-solid fa-circle-play fa-10x"></i></i></a>      
             </div>
             <div class="add-friends">
-                <a href="/" class="mr-2"><i class="fas fa-user-plus fa-3x"></i></a>
+                {{-- <a href="/" class="mr-2"><i class="fas fa-user-plus fa-3x"></i></a> --}}
+                <a href="{{ url('/buscar-amigos')}}"><i class="fas fa-user-plus fa-3x"></i></a>
             </div>
         </div>
        

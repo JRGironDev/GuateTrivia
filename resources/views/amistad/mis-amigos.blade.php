@@ -1,4 +1,4 @@
-@extends('layouts/amistad')
+@extends('layouts.page')
 
 @section('title', 'Mis amigos')
     
@@ -6,23 +6,24 @@
 
 <div class="container">
   <x-amistad-navbar/>
-  <div class="titulo-tabla"><h1>Mis Amigos, Nombre: {{ Auth::user()->name }}, ID: {{ Auth::user()->id }}, Avatar: {{ Auth::user()->AvatarID }}</h1></div>
+  {{-- <div class="titulo-tabla"><h1>Mis Amigos, Nombre: {{ Auth::user()->name }}, ID: {{ Auth::user()->id }}, Avatar: {{ Auth::user()->AvatarID }}</h1></div> --}}
+  <div class="titulo-tabla"><h1>Mis Amigos</h1></div>
     <div class="table-responsive small">
       <table class="table table-striped table-sm">
         <thead>
           <tr>
-            <th scope="col">ID amistad</th> 
-            <th scope="col">ID user</th> 
+            {{-- <th scope="col">ID amistad</th>  --}}
+            {{-- <th scope="col">ID user</th>  --}}
             {{-- <th scope="col">Persona 1</th> --}}
-            <th scope="col">Nombre</th>
+            <th scope="col">Usuario</th>
             <th scope="col"></th>
           </tr>
         </thead>
         <tbody>
           @foreach($amigos as $amigo)
           <tr>
-            <td>{{ $amigo['amistad_id'] }}</td>
-            <td>{{ $amigo['id'] }}</td>
+            {{-- <td>{{ $amigo['amistad_id'] }}</td> --}}
+            {{-- <td>{{ $amigo['id'] }}</td> --}}
             <td>{{ $amigo['nombre'] }}</td>
             <td>
               <form action="{{ route('amistad.destroy', ['ID' => $amigo['amistad_id'], 'origin'=> 'amigos']) }}" method="POST">
