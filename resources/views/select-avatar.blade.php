@@ -48,6 +48,5 @@
                 <a href="/" class="mr-2"><i class="fas fa-user-plus fa-3x"></i></a>
             </div>
         </div>
-       
     </div>
 @endsection

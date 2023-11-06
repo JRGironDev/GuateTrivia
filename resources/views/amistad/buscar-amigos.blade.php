@@ -1,4 +1,4 @@
-@extends('layouts/amistad')
+@extends('layouts.page')
 
 @section('title', 'Buscar amigos')
     
@@ -6,12 +6,13 @@
 
 <div class="container">
   <x-amistad-navbar/>
-  <div class="titulo-tabla"><h1>Buscar Amigos, Nombre: {{ Auth::user()->name }}, ID: {{ Auth::user()->id }}, Avatar: {{ Auth::user()->AvatarID }}</h1></div>
+  {{-- <div class="titulo-tabla"><h1>Buscar Amigos, Nombre: {{ Auth::user()->name }}, ID: {{ Auth::user()->id }}, Avatar: {{ Auth::user()->AvatarID }}</h1></div> --}}
+  <div class="titulo-tabla"><h1>Buscar Amigos</h1></div>
     <div class="table-responsive small">
       <table class="table table-striped table-sm">
         <thead>
           <tr>
-            <th scope="col">ID</th>
+            {{-- <th scope="col">ID</th> --}}
             <th scope="col">Usuario</th>
             <th scope="col"></th>
           </tr>
@@ -19,7 +20,7 @@
         <tbody>
           @foreach($usuariosNoAmigos as $usuario)
           <tr>
-            <td>{{ $usuario->id }}</td>
+            {{-- <td>{{ $usuario->id }}</td> --}}
             <td>{{ $usuario->name }}</td>
             <td>
               <form action="{{ route('enviar-solicitud-amistad') }}" method="POST">
