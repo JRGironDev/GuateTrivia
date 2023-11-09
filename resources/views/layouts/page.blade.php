@@ -15,7 +15,8 @@
 <body>
  <!-- Page Heading -->  
   <div class="comic-header" style="background: url('images/bus.png');">
-    <img src="{{asset('images/jmarroquin.jpg')}}" alt="Imagen circular" class="img-circle">
+    {{-- <img src="{{asset('images/jmarroquin.jpg')}}" alt="Imagen circular" class="img-circle"> --}}
+    <img src="{{ Auth::user()->RutaPerfil }}" alt="Imagen circular" class="img-circle">
     <div class="content">
       <h2>{{ Auth::user()->name }}</h2>
       <div class="progress">

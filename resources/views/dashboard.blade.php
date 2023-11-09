@@ -38,6 +38,12 @@
             <div class="avatar-container">
               <a href="/select-avatar">
                 <img src="{{asset('images/ninio3.jpg')}}" alt="Avatar" class="avatar">
+                {{-- <img src="{{ route('avatar.show-authenticated') }}" alt="Avatar" class="avatar"> --}}
+                {{-- <img src="data:{{ $tipo_archivo }};base64,{{ base64_encode($datos_imagen) }}" alt="Avatar" class="avatar"> --}}
+                {{-- <x-avatar /> --}}
+                {{-- @include('avatar.showAuthenticatedUserAvatar') --}}
+                {{-- <img src="{{ route('avatar.veravatar') }}" alt="Avatar"> --}}
+                  {{-- <img src="{{ route('avatar.show') }}" alt="Avatar"> --}}
               </a>
             </div>
         </div>
