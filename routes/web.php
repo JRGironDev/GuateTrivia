@@ -43,9 +43,6 @@ Route::get('/buscar-amigo',function () {
 // imagenes avatar
 Route::resource('/avatar', AvatarController::class);
 Route::get('avatar/{id}', 'AvatarController@show');
-Route::get('/obtener-imagenes', 'AvatarController@obtenerImagenes');
-// Route::get('/obtener-imagenes', 'AvatarController@obtenerImagenes');
-// Route::get('/obtener-avatares', [AvatarController::class, 'obtenerAvatares']);
 
 Route::resource('/amistad', AmistadController::class)->only([
     'destroy'
