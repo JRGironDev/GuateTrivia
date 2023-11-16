@@ -17,12 +17,13 @@ body, html {
     position: relative;
     display: flex;
     align-items: center;
-    
   }
 
   .comic-header h2 {
-    color: #86efac;
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    /* color: #86efac; */
+    color: blue;
+    /* text-shadow: 4px 4px 2px rgba(0,0,0,0.6); */
+    text-shadow: 2px 2px 2px rgba(255, 255, 255, 1);
   }
 
   .comic-header img {
@@ -81,16 +82,21 @@ body, html {
   }
 
     .avatar-container {
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
-    height: 100%; 
+    justify-content: center; */
+
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    height: 64vh; 
+    /* height: 100%;  */
   }
 
   .avatar {
     width: 250px; 
-    height: 39rem;
-    
+    /* height: 39rem; */
+    height: auto;
   }
   
   /* Estilo para el contenedor */
@@ -99,7 +105,7 @@ body, html {
   }
 
   #play-button{
-    padding: 192px;
+    padding: 185px;
     color: #4CAF50;
     text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
   }
@@ -113,12 +119,13 @@ body, html {
     text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
   }
   .add-friends {
-    position: absolute;
+    /* position: absolute; */
     bottom: 20px;
     right: 20px;
     font-size: 24px; 
     color: #4CAF50;
-    text-shadow: 4px 4px 2px rgba(0,0,0,0.6); 
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.6);
+    margin-bottom: 10px;
 }
 
 .add-friends a:hover {
@@ -138,4 +145,27 @@ body, html {
 #avatares {
   display: flex;
   height: 150px;
+}
+
+
+.inferior-izq {
+  width: 15%;
+  border: 1px solid #4CAF50; 
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 65.7vh;
+  margin: 3px;
+  padding: 7px;
+}
+
+.contenedor-boton-gt {
+  text-align: right;
+  float: right;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: flex-end;
+  height: 22vh;
 }

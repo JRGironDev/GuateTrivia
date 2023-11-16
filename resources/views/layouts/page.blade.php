@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"/>
     @vite(['resources/css/styles.css'])
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    @vite(['resources/css/navbar.css', 'resources/js/navbar.js'])    
+    @vite(['resources/css/navbar.css', 'resources/js/navbar.js'])
+    @vite(['resources/css/popup.css', 'resources/js/popup.js'])
 
     <title>@yield('title')</title>   
   
@@ -29,6 +30,8 @@
       <a href="{{ __('profile') }}"><i class="fas fa-gear fa-3x"></i></a>
     </div>
   </div>
+
+  <x-insignias/>
   <!-- Page Heading --> 
 
   <!-- Page Content -->
