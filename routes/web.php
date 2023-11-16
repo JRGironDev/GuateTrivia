@@ -71,5 +71,6 @@ Route::get('/search-amigos', 'AmistadController@buscarAmigo')->name('buscar_amig
 Route::get('/preguntas', [preguntasController::class, 'index']);
 Route::get('/resultado', [preguntasController::class, 'resultado'])->name('preguntas.resultado');
 
-
+//vistas ranking
+Route::get('/rankings',[\App\Http\Controllers\RankinController::class,'showRanking'])->name('rankings');
 require __DIR__.'/auth.php';

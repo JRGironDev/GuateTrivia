@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('NombreArchivo', 100);
             $table->string('TipoArchivo', 50);
             $table->binary('DatosImagen');
+            $table->string('RutaAvatar', 150);
         });
     }
     

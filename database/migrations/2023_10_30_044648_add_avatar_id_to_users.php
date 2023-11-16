@@ -13,6 +13,9 @@ return new class extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->unsignedBigInteger('AvatarID')->default(1);
+            $table->string('RutaPerfil', 150);
+            $table->string('mejortrofeo')->default(0);
+            $table->integer('nivelusuario')->default(0);
             $table->foreign('AvatarID')->references('ID')->on('Avatares');
         });
     }
@@ -24,7 +27,7 @@ return new class extends Migration
     {
         Schema::table('users', function (Blueprint $table) {
             $table->dropForeign(['AvatarID']);
-            $table->dropColumn('AvatarID');
+            $table->dropColumn(['AvatarID','RutaPerfil', 'mejortrofeo', 'nivelusuario']);
         });
     }
 };

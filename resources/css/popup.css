@@ -4,7 +4,21 @@
     border: none;
     padding: 10px 20px;
     text-align: center;
-    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 50px;
+    margin: 10px;
+    box-shadow: 3px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.boton-gt {
+    background-color: #4caf50;
+    height: 40px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
     font-size: 16px;
     font-weight: bold;
     cursor: pointer;
@@ -101,5 +115,9 @@
 }
 
 #mostrarPopup:hover {
+    background-color: #88edae;
+  }
+
+.boton-gt:hover {
     background-color: #88edae;
   }
